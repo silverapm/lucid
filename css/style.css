@@ -13,6 +13,10 @@
   background-repeat: no-repeat;
   max-width: 1440px;
   margin: auto; }
+  @media screen and (max-width: 522px) {
+    .headerSection {
+      background-color: #16151b;
+      background-image: none; } }
 
 header ul {
   list-style: none;
@@ -35,13 +39,31 @@ header ul li:after {
   content: "";
   background-color: transparent;
   height: 2px;
-  width: 50%;
-  margin-top: 13px;
-  transition: 0.3s; }
+  width: 42px;
+  margin-top: -2px;
+  margin-left: auto;
+  margin-right: auto; }
 
 header ul li:hover:after, header ul li.active:after {
-  background-color: #008ed6;
-  width: 100%; }
+  background-color: #008ed6; }
+
+header ul li a:hover {
+  color: white;
+  text-decoration: none;
+  border: none; }
+
+header ul li a:hover:after {
+  display: block;
+  content: "";
+  background-color: transparent;
+  height: 2px;
+  width: 2px;
+  margin-top: -2px;
+  margin-left: auto;
+  margin-right: auto; }
+
+header ul li a:hover:after, header ul li a.active:after {
+  background-color: #16151b; }
 
 header #logo {
   display: inline-block;
@@ -61,7 +83,24 @@ header h3 {
   color: #ffffff; }
 
 h3 {
-  font: 48px/48px 'Source Sans Pro'; }
+  font: 48px/48px 'Source Sans Pro';
+  padding-bottom: 20px; }
+
+hr {
+  border-top: solid 2px;
+  width: 42px;
+  margin: auto;
+  color: #008ed6; }
+
+hr:after {
+  display: block;
+  content: "123";
+  background-color: red;
+  height: 2px;
+  width: 2px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto; }
 
 p {
   margin-top: 40px;
@@ -95,20 +134,18 @@ p {
 header form {
   margin-bottom: 110px; }
 
-.col-lg-12 {
-  text-align: center; }
-
-.col-lg-3 {
+.icon {
   margin-top: 73px;
   background-color: transparent;
   font-size: 26px;
   color: #008ed6;
   text-align: center; }
 
-.col-lg-3 i {
+.icon i {
+  width: 100px;
   padding: 35px;
   border: solid 1px #e0e0e0;
-  border-radius: 200px; }
+  border-radius: 50%; }
 
 .col-lg-3 h4 {
   font: 24px 'Source Sans Pro';
@@ -145,21 +182,43 @@ header form {
 
 .owl-carousel {
   position: relative; }
+  @media screen and (max-width: 562px) {
+    .owl-carousel {
+      margin-bottom: -64px; } }
+  @media screen and (max-width: 390px) {
+    .owl-carousel {
+      margin-bottom: -108px; } }
+
+.hrright {
+  margin-left: 0; }
 
 .owl-carousel .owl-dots {
   width: 100%;
   text-align: center;
   margin-top: -79px;
   margin-bottom: 30px; }
+  @media screen and (max-width: 990px) {
+    .owl-carousel .owl-dots {
+      position: absolute;
+      bottom: 50px;
+      left: 0; } }
+  @media screen and (max-width: 990px) {
+    .owl-carousel .owl-dots {
+      bottom: 70px; } }
+  @media screen and (max-width: 703px) {
+    .owl-carousel .owl-dots {
+      bottom: 105px; } }
+  @media screen and (max-width: 570px) {
+    .owl-carousel .owl-dots {
+      bottom: 0; } }
+  @media screen and (max-width: 562px) {
+    .owl-carousel .owl-dots {
+      display: none; } }
 
 .owl-carousel .owl-dots .owl-dot {
   font-size: 7px;
   margin: 7px;
   position: relative; }
-  @media screen and (max-width: 414px) {
-    .owl-carousel .owl-dots .owl-dot {
-      top: 50px;
-      left: 180px; } }
 
 .owl-carousel .owl-dots .owl-dot:before {
   color: rgba(255, 255, 255, 0.3);
@@ -183,18 +242,37 @@ header form {
   background-position: top center;
   max-width: 1440px;
   min-height: 640px; }
+  @media screen and (max-width: 990px) {
+    .owlcontainer, .owlcontainer2, .owlcontainer3, .owlcontainer4 {
+      height: auto; } }
 
 .owlcontainer {
   background-image: url("../images/bgtitle1.jpg"); }
+  @media screen and (max-width: 568px) {
+    .owlcontainer {
+      background-color: #1c1b1f;
+      background-image: none; } }
 
 .owlcontainer2 {
   background-image: url("../images/bgtitle2.jpg"); }
+  @media screen and (max-width: 568px) {
+    .owlcontainer2 {
+      background-color: #1c1b1f;
+      background-image: none; } }
 
 .owlcontainer3 {
   background-image: url("../images/bgtitle3.jpg"); }
+  @media screen and (max-width: 568px) {
+    .owlcontainer3 {
+      background-color: #1c1b1f;
+      background-image: none; } }
 
 .owlcontainer4 {
   background-image: url("../images/bgtitle4.jpg"); }
+  @media screen and (max-width: 568px) {
+    .owlcontainer4 {
+      background-color: #1c1b1f;
+      background-image: none; } }
 
 .carouselSection, .liketosee {
   margin: auto;
@@ -214,6 +292,10 @@ header form {
   font-weight: 200;
   font-style: italic;
   color: white; }
+  @media screen and (max-width: 570px) {
+    .bigparagraph {
+      font-size: 18px;
+      line-height: 22px; } }
 
 .smallparagraph {
   display: inline-block;
@@ -229,6 +311,24 @@ header form {
 .liketosee {
   background-color: #15141a;
   padding: 60px 0 60px; }
+  @media screen and (max-width: 990px) {
+    .liketosee {
+      margin-top: -60px; } }
+  @media screen and (max-width: 739px) {
+    .liketosee {
+      margin-top: -92px; } }
+  @media screen and (max-width: 703px) {
+    .liketosee {
+      margin-top: -124px; } }
+  @media screen and (max-width: 570px) {
+    .liketosee {
+      margin-top: -20px; } }
+  @media screen and (max-width: 570px) {
+    .liketosee {
+      margin-top: -20px; } }
+  @media screen and (max-width: 562px) {
+    .liketosee {
+      margin-top: -42px; } }
 
 .liketosee p {
   margin: 0;
@@ -244,7 +344,8 @@ header form {
   margin-right: 0; }
 
 .smallblock {
-  border: solid 1px gray; }
+  border: solid 1px gray;
+  margin-top: 70px; }
 
 .smallblock h6 {
   font: 24px/48px 'Source Sans Pro';
@@ -288,9 +389,6 @@ header form {
   margin-bottom: 30px;
   border: solid 1px gray; }
 
-.pricingSection h3 {
-  margin-bottom: 70px; }
-
 .smallblock:hover h6 {
   color: #008ed6; }
 .smallblock:hover .price, .smallblock:hover .pricespan1 {
@@ -299,7 +397,7 @@ header form {
 .smallblock:hover .pricebutton {
   background-color: #008ed6;
   color: white;
-  border: none; }
+  border-color: transparent; }
 
 .pricingSection {
   max-width: 1440px;
@@ -312,6 +410,9 @@ header form {
   padding-bottom: 370px;
   max-width: 1440px;
   margin: auto; }
+  @media screen and (max-width: 1199px) {
+    .contactSection {
+      padding-bottom: 0; } }
 
 .contactSection i {
   margin-top: 59px;
@@ -328,8 +429,11 @@ header form {
   background-color: #15141a;
   position: absolute;
   max-width: 770px;
-  top: 4460px;
+  top: 4670px;
   left: 28%; }
+  @media screen and (max-width: 1199px) {
+    .blackIcon {
+      position: static; } }
 
 .blackForm {
   padding: 60px 60px 40px 60px; }
@@ -351,6 +455,11 @@ header form {
 .blackForm .headerbutton {
   margin-right: 0;
   margin-left: 30px; }
+  @media screen and (max-width: 1199px) {
+    .blackForm .headerbutton {
+      margin-right: 0;
+      margin-left: 0;
+      margin-top: 20px; } }
 
 .mapsection {
   max-width: 1440px;
