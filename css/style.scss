@@ -21,6 +21,10 @@
   background-repeat: no-repeat;
   max-width: 1440px;
   margin: auto;
+  @include max-screen(522px) {
+    background-color: #16151b;
+    background-image: none;
+  }
 }
 
 header ul {
@@ -47,14 +51,35 @@ header ul li:after {
   content: "";
   background-color: transparent;
   height: 2px;
-  width: 50%;
-  margin-top: 13px;
-  transition: 0.3s;
+  width: 42px;
+  margin-top: -2px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header ul li:hover:after, header ul li.active:after {
   background-color: #008ed6;
-  width: 100%;
+}
+
+header ul li a:hover {
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+
+header ul li a:hover:after {
+  display: block;
+  content: "";
+  background-color: transparent;
+  height: 2px;
+  width: 2px;
+  margin-top: -2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header ul li a:hover:after, header ul li a.active:after {
+  background-color: #16151b;
 }
 
 header #logo {
@@ -79,6 +104,25 @@ header h3 {
 
 h3 {
   font: 48px/48px 'Source Sans Pro';
+  padding-bottom: 20px;
+}
+
+hr {
+  border-top: solid 2px;
+  width: 42px;
+  margin: auto;
+  color: #008ed6;
+}
+
+hr:after {
+  display: block;
+  content: "123";
+  background-color: red;
+  height: 2px;
+  width: 2px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
@@ -117,11 +161,7 @@ header form {
   margin-bottom: 110px;
 }
 
-.col-lg-12 {
-  text-align: center;
-}
-
-.col-lg-3 {
+.icon {
   margin-top: 73px;
   background-color: transparent;
   font-size: 26px;
@@ -129,10 +169,11 @@ header form {
   text-align: center;
 }
 
-.col-lg-3 i {
+.icon i {
+  width: 100px;
   padding: 35px;
   border: solid 1px #e0e0e0;
-  border-radius: 200px;
+  border-radius: 50%;
 }
 
 
@@ -178,6 +219,16 @@ header form {
 
 .owl-carousel {
   position: relative;
+  @include max-screen(562px) {
+    margin-bottom: -64px;
+  }
+  @include max-screen(390px) {
+    margin-bottom: -108px;
+  }
+}
+
+.hrright {
+  margin-left: 0;
 }
 
 .owl-carousel .owl-dots {
@@ -185,16 +236,29 @@ header form {
   text-align: center;
   margin-top: -79px;
   margin-bottom: 30px;
+  @include max-screen(990px) {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+  }
+  @include max-screen(990px) {
+    bottom: 70px;
+  }
+  @include max-screen(703px) {
+    bottom: 105px;
+  }
+  @include max-screen(570px) {
+    bottom: 0;
+  }
+  @include max-screen(562px) {
+    display: none;
+  }
 }
 
 .owl-carousel .owl-dots .owl-dot {
   font-size: 7px;
   margin: 7px;
   position: relative;
-  @include max-screen(414px) {
-    top: 50px;
-    left: 180px;
-  }
 }
 
 .owl-carousel .owl-dots .owl-dot:before {
@@ -221,22 +285,41 @@ header form {
   background-position: top center;
   max-width: 1440px;
   min-height: 640px;
+  @include max-screen(990px) {
+    height: auto;
+  }
 }
 
 .owlcontainer {
   background-image: url("../images/bgtitle1.jpg");
+  @include max-screen(568px) {
+    background-color: #1c1b1f;
+    background-image: none;
+  }
 }
 
 .owlcontainer2 {
   background-image: url("../images/bgtitle2.jpg");
+  @include max-screen(568px) {
+    background-color: #1c1b1f;
+    background-image: none;
+  }
 }
 
 .owlcontainer3 {
   background-image: url("../images/bgtitle3.jpg");
+  @include max-screen(568px) {
+    background-color: #1c1b1f;
+    background-image: none;
+  }
 }
 
 .owlcontainer4 {
   background-image: url("../images/bgtitle4.jpg");
+  @include max-screen(568px) {
+    background-color: #1c1b1f;
+    background-image: none;
+  }
 }
 
 .carouselSection, .liketosee {
@@ -260,6 +343,10 @@ header form {
   font-weight: 200;
   font-style: italic;
   color: white;
+  @include max-screen(570px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .smallparagraph {
@@ -278,6 +365,24 @@ header form {
 .liketosee {
   background-color: #15141a;
   padding: 60px 0 60px;
+  @include max-screen(990px) {
+    margin-top: -60px;
+  }
+  @include max-screen(739px) {
+    margin-top: -92px;
+  }
+  @include max-screen(703px) {
+    margin-top: -124px;
+  }
+  @include max-screen(570px) {
+    margin-top: -20px;
+  }
+  @include max-screen(570px) {
+    margin-top: -20px;
+  }
+  @include max-screen(562px) {
+    margin-top: -42px;
+  }
 }
 
 .liketosee p {
@@ -299,6 +404,7 @@ header form {
 
 .smallblock {
   border: solid 1px gray;
+  margin-top: 70px;
 }
 
 .smallblock h6 {
@@ -352,10 +458,6 @@ header form {
   border: solid 1px gray;
 }
 
-.pricingSection h3 {
-  margin-bottom: 70px;
-}
-
 .smallblock:hover {
   h6 {
     color: #008ed6;
@@ -367,7 +469,7 @@ header form {
   .pricebutton {
     background-color: #008ed6;
     color: white;
-    border: none;
+    border-color: transparent;
   }
 }
 
@@ -383,6 +485,9 @@ header form {
   padding-bottom: 370px;
   max-width: 1440px;
   margin: auto;
+  @include max-screen(1199px) {
+    padding-bottom: 0;
+  }
 }
 
 .contactSection i {
@@ -402,8 +507,11 @@ header form {
   background-color: #15141a;
   position: absolute;
   max-width: 770px;
-  top: 4460px;
+  top: 4670px;
   left: 28%;
+  @include max-screen(1199px) {
+    position: static;
+  }
 }
 
 .blackForm {
@@ -429,6 +537,11 @@ header form {
 .blackForm .headerbutton {
   margin-right: 0;
   margin-left: 30px;
+  @include max-screen(1199px) {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 .mapsection {
