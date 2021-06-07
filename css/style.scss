@@ -93,6 +93,13 @@ header #logo {
 
 h2 {
   margin-top: 30px;
+  @include max-screen(522px) {
+    margin-top: 20px;
+  }
+  @include max-screen(376px) {
+    margin-top: 5px;
+    font: 10px/20px 'Source Sans Pro';
+  }
   color: #008ed6;
   font: 14px/48px 'Source Sans Pro';
   font-weight: 600;
@@ -106,6 +113,10 @@ header h3 {
 h3 {
   font: 48px/48px 'Source Sans Pro';
   padding-bottom: 20px;
+  @include max-screen(376px) {
+    padding-bottom: 5px;
+    font: 34px/34px 'Source Sans Pro';
+  }
 }
 
 hr {
@@ -131,6 +142,9 @@ p {
   color: #999999;
   font: 18px/26px 'Source Sans Pro';
   margin-bottom: 67px;
+  @include max-screen(522px) {
+    margin-bottom: 20px;
+  }
 }
 
 .btn-default.headerbutton {
@@ -156,10 +170,20 @@ p {
   border-radius: 4px;
   background-color: transparent;
   border: solid 1px #4c4b50;
+  @include max-screen(376px) {
+    margin-top: 20px;
+  }
 }
 
 header form {
   margin-bottom: 110px;
+  @include max-screen(522px) {
+    margin-bottom: 40px;
+  }
+  @include max-screen(376px) {
+    margin-bottom: 20px;
+  }
+
 }
 
 .icon {
@@ -218,14 +242,12 @@ header form {
   margin: auto;
 }
 
+.owlbox {
+  padding: 0;
+}
+
 .owl-carousel {
   position: relative;
-  @include max-screen(562px) {
-    margin-bottom: -64px;
-  }
-  @include max-screen(390px) {
-    margin-bottom: -108px;
-  }
 }
 
 .hrright {
@@ -237,22 +259,26 @@ header form {
   text-align: center;
   margin-top: -79px;
   margin-bottom: 30px;
-  @include max-screen(990px) {
-    position: absolute;
-    bottom: 50px;
-    left: 0;
+  @include max-screen(991px) {
+    margin-top: -119px;
   }
-  @include max-screen(990px) {
-    bottom: 70px;
+  @include max-screen(739px) {
+    margin-top: -151px;
   }
   @include max-screen(703px) {
-    bottom: 105px;
+    margin-top: -183px;
   }
   @include max-screen(570px) {
-    bottom: 0;
+    margin-top: -79px;
   }
   @include max-screen(562px) {
-    display: none;
+    margin-top: -101px;
+  }
+  @include max-screen(535px) {
+    margin-top: -123px;
+  }
+  @include max-screen(376px) {
+    margin-top: -50px;
   }
 }
 
@@ -260,6 +286,9 @@ header form {
   font-size: 7px;
   margin: 7px;
   position: relative;
+  @include max-screen(431px) {
+    display: none;
+  }
 }
 
 .owl-carousel .owl-dots .owl-dot:before {
@@ -280,47 +309,31 @@ header form {
 
 .owlcontainer, .owlcontainer2, .owlcontainer3, .owlcontainer4 {
   padding-top: 40px;
+  @include max-screen(376px) {
+    padding: 5px;
+  }
   position: relative;
   z-index: 1;
   background-repeat: no-repeat;
   background-position: top center;
   max-width: 1440px;
   min-height: 640px;
-  @include max-screen(990px) {
-    height: auto;
-  }
 }
 
 .owlcontainer {
   background-image: url("../images/bgtitle1.jpg");
-  @include max-screen(568px) {
-    background-color: #1c1b1f;
-    background-image: none;
-  }
 }
 
 .owlcontainer2 {
   background-image: url("../images/bgtitle2.jpg");
-  @include max-screen(568px) {
-    background-color: #1c1b1f;
-    background-image: none;
-  }
 }
 
 .owlcontainer3 {
   background-image: url("../images/bgtitle3.jpg");
-  @include max-screen(568px) {
-    background-color: #1c1b1f;
-    background-image: none;
-  }
 }
 
 .owlcontainer4 {
   background-image: url("../images/bgtitle4.jpg");
-  @include max-screen(568px) {
-    background-color: #1c1b1f;
-    background-image: none;
-  }
 }
 
 .carouselSection, .liketosee {
@@ -367,24 +380,6 @@ header form {
 .liketosee {
   background-color: #15141a;
   padding: 60px 0 60px;
-  @include max-screen(990px) {
-    margin-top: -60px;
-  }
-  @include max-screen(739px) {
-    margin-top: -92px;
-  }
-  @include max-screen(703px) {
-    margin-top: -124px;
-  }
-  @include max-screen(570px) {
-    margin-top: -20px;
-  }
-  @include max-screen(570px) {
-    margin-top: -20px;
-  }
-  @include max-screen(562px) {
-    margin-top: -42px;
-  }
 }
 
 .liketosee p {
@@ -457,7 +452,6 @@ header form {
 
 .btn-default.headerbutton2.pricebutton {
   color: #008ed6;
-  margin-left: 45px;
   margin-bottom: 30px;
   border: solid 1px gray;
 }
@@ -514,9 +508,13 @@ header form {
   position: absolute;
   max-width: 770px;
   top: 4670px;
-  left: 28%;
+  left: 24%;
+  @include max-screen(1200px) {
+    left: 18%;
+  }
   @include max-screen(1199px) {
     position: static;
+    margin: auto;
   }
 }
 

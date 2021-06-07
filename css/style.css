@@ -78,6 +78,13 @@ h2 {
   font: 14px/48px 'Source Sans Pro';
   font-weight: 600;
   text-transform: uppercase; }
+  @media screen and (max-width: 522px) {
+    h2 {
+      margin-top: 20px; } }
+  @media screen and (max-width: 376px) {
+    h2 {
+      margin-top: 5px;
+      font: 10px/20px 'Source Sans Pro'; } }
 
 header h3 {
   color: #ffffff; }
@@ -85,6 +92,10 @@ header h3 {
 h3 {
   font: 48px/48px 'Source Sans Pro';
   padding-bottom: 20px; }
+  @media screen and (max-width: 376px) {
+    h3 {
+      padding-bottom: 5px;
+      font: 34px/34px 'Source Sans Pro'; } }
 
 hr {
   border-top: solid 2px;
@@ -107,6 +118,9 @@ p {
   color: #999999;
   font: 18px/26px 'Source Sans Pro';
   margin-bottom: 67px; }
+  @media screen and (max-width: 522px) {
+    p {
+      margin-bottom: 20px; } }
 
 .btn-default.headerbutton {
   background-image: none;
@@ -130,9 +144,18 @@ p {
   border-radius: 4px;
   background-color: transparent;
   border: solid 1px #4c4b50; }
+  @media screen and (max-width: 376px) {
+    .btn-default.headerbutton2 {
+      margin-top: 20px; } }
 
 header form {
   margin-bottom: 110px; }
+  @media screen and (max-width: 522px) {
+    header form {
+      margin-bottom: 40px; } }
+  @media screen and (max-width: 376px) {
+    header form {
+      margin-bottom: 20px; } }
 
 .icon {
   margin-top: 73px;
@@ -180,14 +203,11 @@ header form {
   max-width: 1440px;
   margin: auto; }
 
+.owlbox {
+  padding: 0; }
+
 .owl-carousel {
   position: relative; }
-  @media screen and (max-width: 562px) {
-    .owl-carousel {
-      margin-bottom: -64px; } }
-  @media screen and (max-width: 390px) {
-    .owl-carousel {
-      margin-bottom: -108px; } }
 
 .hrright {
   margin-left: 0; }
@@ -197,28 +217,35 @@ header form {
   text-align: center;
   margin-top: -79px;
   margin-bottom: 30px; }
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 991px) {
     .owl-carousel .owl-dots {
-      position: absolute;
-      bottom: 50px;
-      left: 0; } }
-  @media screen and (max-width: 990px) {
+      margin-top: -119px; } }
+  @media screen and (max-width: 739px) {
     .owl-carousel .owl-dots {
-      bottom: 70px; } }
+      margin-top: -151px; } }
   @media screen and (max-width: 703px) {
     .owl-carousel .owl-dots {
-      bottom: 105px; } }
+      margin-top: -183px; } }
   @media screen and (max-width: 570px) {
     .owl-carousel .owl-dots {
-      bottom: 0; } }
+      margin-top: -79px; } }
   @media screen and (max-width: 562px) {
     .owl-carousel .owl-dots {
-      display: none; } }
+      margin-top: -101px; } }
+  @media screen and (max-width: 535px) {
+    .owl-carousel .owl-dots {
+      margin-top: -123px; } }
+  @media screen and (max-width: 376px) {
+    .owl-carousel .owl-dots {
+      margin-top: -50px; } }
 
 .owl-carousel .owl-dots .owl-dot {
   font-size: 7px;
   margin: 7px;
   position: relative; }
+  @media screen and (max-width: 431px) {
+    .owl-carousel .owl-dots .owl-dot {
+      display: none; } }
 
 .owl-carousel .owl-dots .owl-dot:before {
   color: rgba(255, 255, 255, 0.3);
@@ -242,37 +269,21 @@ header form {
   background-position: top center;
   max-width: 1440px;
   min-height: 640px; }
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 376px) {
     .owlcontainer, .owlcontainer2, .owlcontainer3, .owlcontainer4 {
-      height: auto; } }
+      padding: 5px; } }
 
 .owlcontainer {
   background-image: url("../images/bgtitle1.jpg"); }
-  @media screen and (max-width: 568px) {
-    .owlcontainer {
-      background-color: #1c1b1f;
-      background-image: none; } }
 
 .owlcontainer2 {
   background-image: url("../images/bgtitle2.jpg"); }
-  @media screen and (max-width: 568px) {
-    .owlcontainer2 {
-      background-color: #1c1b1f;
-      background-image: none; } }
 
 .owlcontainer3 {
   background-image: url("../images/bgtitle3.jpg"); }
-  @media screen and (max-width: 568px) {
-    .owlcontainer3 {
-      background-color: #1c1b1f;
-      background-image: none; } }
 
 .owlcontainer4 {
   background-image: url("../images/bgtitle4.jpg"); }
-  @media screen and (max-width: 568px) {
-    .owlcontainer4 {
-      background-color: #1c1b1f;
-      background-image: none; } }
 
 .carouselSection, .liketosee {
   margin: auto;
@@ -311,24 +322,6 @@ header form {
 .liketosee {
   background-color: #15141a;
   padding: 60px 0 60px; }
-  @media screen and (max-width: 990px) {
-    .liketosee {
-      margin-top: -60px; } }
-  @media screen and (max-width: 739px) {
-    .liketosee {
-      margin-top: -92px; } }
-  @media screen and (max-width: 703px) {
-    .liketosee {
-      margin-top: -124px; } }
-  @media screen and (max-width: 570px) {
-    .liketosee {
-      margin-top: -20px; } }
-  @media screen and (max-width: 570px) {
-    .liketosee {
-      margin-top: -20px; } }
-  @media screen and (max-width: 562px) {
-    .liketosee {
-      margin-top: -42px; } }
 
 .liketosee p {
   margin: 0;
@@ -385,7 +378,6 @@ header form {
 
 .btn-default.headerbutton2.pricebutton {
   color: #008ed6;
-  margin-left: 45px;
   margin-bottom: 30px;
   border: solid 1px gray; }
 
@@ -430,10 +422,14 @@ header form {
   position: absolute;
   max-width: 770px;
   top: 4670px;
-  left: 28%; }
+  left: 24%; }
+  @media screen and (max-width: 1200px) {
+    .blackIcon {
+      left: 18%; } }
   @media screen and (max-width: 1199px) {
     .blackIcon {
-      position: static; } }
+      position: static;
+      margin: auto; } }
 
 .blackForm {
   padding: 60px 60px 40px 60px; }
