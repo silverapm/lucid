@@ -18,6 +18,9 @@
       background-color: #16151b;
       background-image: none; } }
 
+header {
+  background-color: #15151c; }
+
 header ul {
   list-style: none;
   text-align: right; }
@@ -199,9 +202,7 @@ header form {
   padding-top: 64px;
   padding-bottom: 64px;
   background-color: #f2f2f2;
-  background-image: none;
-  max-width: 1440px;
-  margin: auto; }
+  background-image: none; }
 
 .owlbox {
   padding: 0; }
@@ -285,7 +286,10 @@ header form {
 .owlcontainer4 {
   background-image: url("../images/bgtitle4.jpg"); }
 
-.carouselSection, .liketosee {
+.carouselSection {
+  background-color: #15141a; }
+
+.carouselSection .container-fluid {
   margin: auto;
   max-width: 1440px; }
 
@@ -320,6 +324,11 @@ header form {
     font-size: 14px; }
 
 .liketosee {
+  background-color: #15141a; }
+
+.liketosee .container-fluid {
+  margin: auto;
+  max-width: 1440px;
   background-color: #15141a;
   padding: 60px 0 60px; }
 
@@ -398,13 +407,11 @@ header form {
   margin-bottom: 60px; }
 
 .contactSection {
-  background-color: #ededed;
-  padding-bottom: 370px;
+  background-color: #ededed; }
+
+.contactSection .container-fluid {
   max-width: 1440px;
   margin: auto; }
-  @media screen and (max-width: 1199px) {
-    .contactSection {
-      padding-bottom: 0; } }
 
 .contactSection i {
   margin-top: 59px;
@@ -419,13 +426,8 @@ header form {
 
 .blackIcon {
   background-color: #15141a;
-  position: absolute;
   max-width: 770px;
-  top: 4670px;
-  left: 24%; }
-  @media screen and (max-width: 1200px) {
-    .blackIcon {
-      left: 18%; } }
+  margin: auto; }
   @media screen and (max-width: 1199px) {
     .blackIcon {
       position: static;
@@ -458,15 +460,17 @@ header form {
       margin-top: 20px; } }
 
 .mapsection {
+  background-color: #ededed; }
+
+.mapsection .container-fluid {
   max-width: 1440px;
   margin: auto;
-  height: 370px; }
+  max-height: 370px; }
 
 footer {
   background-color: #15141a;
   padding-top: 55px;
   padding-bottom: 46px;
-  max-width: 1440px;
   margin: auto; }
 
 footer i {
